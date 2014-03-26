@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black" >
+
+    <include
+        android:id="@+id/include1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/readmessage_topbar" >
+    </include>
+
+    <ImageView
+        android:id="@+id/messagereading_userimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include1"
+        android:src="@drawable/brainslamsymbol"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/messagereading_From"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/messagereading_userimage"
+        android:layout_toRightOf="@+id/messagereading_userimage"
+        android:text="From:"
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+        android:textColor="@android:color/white"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/messagereading_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/messagereading_From"
+        android:layout_alignBottom="@+id/messagereading_From"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="1.00PM"
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+        android:textColor="@android:color/white"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/messagereading_Messagetitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/messagereading_userimage"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:text="Title Goes Here" />
+
+    <TextView
+        android:id="@+id/messagereading_Hline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/messagereading_Messagetitle"
+        android:background="@android:color/white" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="8dp"
+        android:layout_below="@+id/messagereading_Hline"
+        android:layout_marginTop="15dp"
+        android:layout_above="@+id/message_bottombar" >
+
+
+
+            <TextView
+                android:id="@+id/messagereading_message_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="text go here"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+            
+        
+    </ScrollView>
+
+   <include
+       android:id="@+id/message_bottombar"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentLeft="true"
+       layout="@layout/message_bottom_bar" />
+
+</RelativeLayout>

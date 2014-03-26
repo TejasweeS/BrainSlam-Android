@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+    android:weightSum="10"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+        android:orientation="horizontal" 
+        android:layout_weight="8">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_marginLeft="5dp"
+        android:layout_weight="8">
+        
+        <ImageView 
+            android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:id="@+id/iv_user_img"
+        android:src="@drawable/box_outline"/>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:weightSum="10"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="5"
+            android:gravity="center_vertical"
+            android:weightSum="9" >
+            
+            <ImageView 
+            android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:id="@+id/iv_select_friend"
+        android:layout_weight="3"
+        android:src="@android:drawable/ic_menu_info_details"/>
+            
+            <ImageView 
+            android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:id="@+id/iv_email"
+        android:layout_weight="3"
+        android:src="@android:drawable/ic_dialog_email"/>
+            
+            <ImageView 
+            android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:id="@+id/iv_refresh"
+        android:layout_weight="3"
+        android:src="@android:drawable/ic_menu_rotate"/>
+            
+        </LinearLayout>
+
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:orientation="horizontal" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:weightSum="9"
+            android:orientation="horizontal" >
+            
+            <TextView 
+                android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="USERNAME"
+            android:layout_weight="3"
+            android:id="@+id/tv_user_name"
+            android:gravity="center_vertical|right"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+            
+            <TextView 
+                android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="ONLINE"
+            android:layout_weight="3"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical|left"
+            android:id="@+id/tv_user_status"
+            android:textColor="#00ff00"
+            android:textStyle="bold"/>
+            
+            <ImageView 
+            android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:id="@+id/iv_delete"
+        android:layout_weight="3"
+        android:src="@android:drawable/ic_delete"/>
+            
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+      <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"
+            android:orientation="horizontal" />
+</LinearLayout>

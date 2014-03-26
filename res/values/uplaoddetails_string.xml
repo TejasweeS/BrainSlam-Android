@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="uplaod_details_step1_textview1">Step 1</string>
+    <string name="uplaod_details_step1_textview2">Tell us about your\nupload?</string>
+    <string name="uplaod_details_step1_textview3">upload?</string>
+    <string name="uplaod_details_step2_textview1">Step 2</string>
+    <string name="uplaod_details_step2_textview2">Who do you want to\nShare it with?</string>
+    <string name="uplaod_details_step2_textview3"></string>
+    <string name="uplaod_details_step2_textview4">The World</string>
+    <string name="uplaod_details_step2_textview5">Everyone</string>
+    <string name="uplaod_details_step2_textview6">My Crew</string>
+    <string name="uplaod_details_step2_textview7">Only Friends </string>
+    <string name="uplaod_details_step2_textview8">Hand Pick</string>
+    <string name="uplaod_details_step2_textview9">Selected Friends</string>
+    <string name="uplaod_details_step3_textview1">Step 3</string>
+    <string name="uplaod_details_step3_textview2">Where do you want to</string>
+    <string name="uplaod_details_step3_textview3">share it?</string>
+    <string name="uplaod_details_step3_textview4">Facebook</string>
+    <string name="uplaod_details_step3_textview5">Twitter</string>
+    <string name="uplaod_details_step3_textview6">Google+</string>
+    <string name="uplaod_details_next">Next</string>
+    
+
+</resources>

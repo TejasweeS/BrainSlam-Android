@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#3399FF"
+    android:gravity="left|center"
+    android:orientation="horizontal"
+    android:weightSum="20" >
+
+    <ImageView
+        android:id="@+id/bluebar_backbtn"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        android:src="@drawable/whitebackarrow" />
+
+    <TextView
+        android:id="@+id/bluebar_title"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="My Uploads"
+        android:textColor="@color/white"
+        android:textSize="@dimen/editmystream_title_textsize" />
+
+    <ImageView
+        android:id="@+id/bluebar_rightbtn"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center|right"
+        android:layout_weight="9"
+        android:src="@drawable/adduser" />
+
+</LinearLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/step3_title_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/slam_word_color" >
+
+        <TextView
+            android:id="@+id/left_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/Step3"
+            android:background="@android:color/white"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/Step3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="15dp"
+            android:text="@string/uplaod_details_step3_textview1"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tell_about_your"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/step3_title_relativelayout"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/uplaod_details_step3_textview2"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/activity_upload_details_titlesize" />
+
+    <TextView
+        android:id="@+id/upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tell_about_your"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/uplaod_details_step3_textview3"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/activity_upload_details_titlesize" />
+
+    <ImageView
+        android:id="@+id/image_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/facebook_relativelayout"
+        android:layout_below="@id/upload"
+        android:background="@android:color/transparent"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/VideoPreview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/facebook_relativelayout"
+        android:layout_below="@id/upload" >
+
+        <ImageView
+            android:id="@+id/video_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:visibility="visible" />
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent" />
+
+        <ImageView
+            android:id="@+id/Preview_Play_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:onClick="onClick"
+            android:src="@drawable/playbutton" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/facebook_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/twitter_relativelayout"
+        android:background="@android:color/black" >
+
+        <TextView
+            android:id="@+id/uploaddetails_step3_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:text="@string/uplaod_details_step3_textview4" />
+
+        <CheckBox
+            android:id="@+id/facebook_selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+             android:paddingRight="@dimen/activity_landing_chekbox_padding_right"
+            android:layout_margin="10dp"
+            android:button="@drawable/landing_checkbox_selector"
+            android:checked="true"
+             />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/twitter_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/google_relativelayout"
+        android:layout_marginTop="0.5dp"
+        android:background="@android:color/black" >
+
+        <TextView
+            android:id="@+id/uploaddetails_step3_twitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:text="@string/uplaod_details_step3_textview5" />
+
+        <CheckBox
+            android:id="@+id/twitter_selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:paddingRight="@dimen/activity_landing_chekbox_padding_right"
+            android:button="@drawable/landing_checkbox_selector"
+            android:checked="false"
+             />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/google_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0.5dp"
+        android:layout_marginTop="0.5dp"
+        android:background="@android:color/black" >
+
+        <TextView
+            android:id="@+id/uploaddetails_step3_google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:text="@string/uplaod_details_step3_textview6" />
+
+        <CheckBox
+            android:id="@+id/google_selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+             android:paddingRight="@dimen/activity_landing_chekbox_padding_right"
+            android:button="@drawable/landing_checkbox_selector"
+            android:checked="false"
+           />
+    </RelativeLayout>
+
+</RelativeLayout>

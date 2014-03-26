@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="pushnotification_title">PUSH NOTIFICATIONS</string>
+     <string name="myaccount_text1">Uploads, Comments, Followers</string>
+      <string name="myaccount_text2">MY PROFILE</string>
+       <string name="myaccount_text3">EDIT UPLOADS</string>
+        <string name="myaccount_group">GROUPS</string>
+        <string name="myaccount_createlist">CREATE LIST</string>
+         <string name="myaccount_friends">FRIENDS</string>
+          <string name="myaccount_followers">FOLLOWERS</string>
+           <string name="myaccount_message">MESSAGES</string>
+           <string name="myaccount_message_private">PRIVATE</string>
+           <string name="myaccount_message_group">GROUP</string>
+            <string name="myaccount_connectedaccount">CONNECTED ACCOUNT</string>
+             <string name="myaccount_connectedaccount1">FACEBOOK</string>
+             <string name="myaccount_connectedaccount2">GOOGLE PLUS</string>
+              <string name="myaccount_connectedaccount_isconnected">Account Connected</string>
+               <string name="myaccount_connectedaccount_isnotconnected">Not Connected</string>
+             <string name="myaccount_connectedaccount3">TWITTER</string>
+<color 
+    name="strip"
+    >@android:color/darker_gray</color>
+<color 
+    name="white"
+    >@android:color/white</color>
+</resources>

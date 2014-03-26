@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="5"
+    android:orientation="horizontal"
+    android:background="@android:color/white">
+    
+      <ImageView
+        android:id="@+id/Playlistname_back_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:clickable="true"
+android:onClick="backarrowclick"
+        android:src="@drawable/backarrow" 
+        android:layout_weight="1"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/playlist_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.99"
+        android:gravity="center_horizontal"
+        android:padding="12dp"
+        android:text="Playlist Name" 
+        android:textSize="@dimen/activity_playlist_actionbar_playlistSize"
+        android:textColor="@color/grey"/>
+
+    <ImageView
+        android:id="@+id/Playlistname_sharing_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/share"
+        android:layout_weight="1"
+        android:padding="5dp"/>
+    
+
+</LinearLayout>

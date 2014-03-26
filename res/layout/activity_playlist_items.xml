@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+
+    <include
+        android:id="@+id/include1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/playlist_actiontopbar" />
+
+    <TextView
+        android:id="@+id/playlist_name_followerstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="3 Followers" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/playlist_name_followerstext"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_shufflelist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Shuffle Playlist"
+            android:textColor="@color/brain_word_color"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/playlist_name_shuffle_icon"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/shuffle" />
+
+    </LinearLayout>
+
+        <ListView
+            android:id="@+id/playlist_items_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="#00000000"
+            android:layout_above="@+id/currently_playing"
+            android:layout_marginTop="140dp" >
+
+        </ListView>
+      
+   
+  <TextView
+        android:id="@+id/currently_playing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/include2"
+        android:text="Currently playing" 
+        android:gravity="center"
+        android:background="@color/brain_word_color"
+        android:textColor="@android:color/black"/>
+    
+    <include
+        android:id="@+id/include2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/playlist_items_bottomactionbar" 
+        android:layout_alignParentBottom="true"/>
+
+   
+</RelativeLayout>

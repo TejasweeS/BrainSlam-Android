@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Please_text">Please Rate The Video</string>
+    <string name="video_rating1">BRAIN-SLAM</string>
+    <string name="video_rating2">INTENSE</string>
+    <string name="video_rating3">CLUNKER</string>
+    <string name="video_rating4">SICK-WRONG</string>
+    <string name="video_rating5">DISTURBED</string>
+</resources>

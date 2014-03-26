@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="topbar_title">Push Notifications</string>
+    <string name="notication_category_textview1">My Notifications</string>
+    <string name="notication_category_textview2">Crew</string>
+    <string name="notication_category_textview3">PlayList</string>
+    <string name="my_notification_category_textview1">New Uploads</string>
+    <string name="my_notification_category_textview2">New Follower</string>
+    <string name="my_notification_category_textview3">Home Stream Updates</string>
+    <string name="my_notification_category_textview4">New Featured Videos</string>
+    <string name="my_notification_category_textview5">New Messages</string>
+    <string name="crew_category_textview1">Crew Activity Update</string>
+    <string name="crew_category_textview2">New Follower</string>
+    <string name="crew_category_textview3">Friend Request</string>
+    <string name="crew_category_textview4">New Playlist Subscriber</string>
+    <string name="playlist_category_textview1">New Playlist Subscriber</string>
+    <string name="playlist_category_textview2">PlayList Updated</string>
+
+</resources>

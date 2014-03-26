@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:background="@android:color/white" 
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/readmessage_back_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/backarrow" />
+
+    <TextView
+        android:id="@+id/readmessage_back_text"
+        android:layout_toRightOf="@id/readmessage_back_icon"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:gravity="center"
+        android:text="Back" />
+<ImageView
+        android:id="@+id/readmessage_arrow_up"
+        android:layout_toLeftOf="@+id/readmessage_arrow_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="right"
+        android:src="@drawable/grayuparrow" 
+        android:layout_marginRight="5dp"/>
+    <ImageView
+        android:id="@+id/readmessage_arrow_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="right"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/downbluearrow" />
+
+    <TextView
+        android:id="@+id/readmessage_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/readmessage_arrow_down"
+        android:layout_toRightOf="@+id/readmessage_back_text"
+        android:gravity="left|center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Title" />
+
+</RelativeLayout>

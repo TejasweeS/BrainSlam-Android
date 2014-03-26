@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mycrewrelative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black" >
+
+    <TextView
+        android:id="@+id/my_crew_stream"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/brain_word_color"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/mainscreen_crew_mystream_textview1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/editmystream_title_textsize"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_crew_stream"
+        android:background="@color/slam_word_color"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+<EditText
+            android:id="@+id/mainscreen_crew_searchbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:drawableLeft="@drawable/searchicon"
+            android:hint=" search friends and crews"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:padding="2dp" />
+        
+      
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_margin="10dp"
+        android:background="@color/black"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/mainscreen_crew_addnew_screw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/brain_word_color"
+            android:padding="10dp"
+            android:text="@string/mainscreen_crew_mystream_button1" 
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/mainscreen_crew_friend_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@color/slam_word_color"
+            android:padding="10dp"
+            android:text="@string/mainscreen_crew_mystream_button2" 
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/pending_friend_request_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttons_linearLayout"
+        android:layout_below="@+id/buttons_linearLayout"
+        android:layout_marginTop="15dp"
+        android:background="@color/black" >
+
+        <TextView
+            android:id="@+id/pending_friend_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:text="@string/mainscreen_crew_mystream_textview2"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/pending_friend_requestcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/imageView1"
+            android:text="2" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/smallforwardarrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pending_crew_request_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pending_friend_request_relativelayout"
+        android:layout_below="@+id/pending_friend_request_relativelayout"
+        android:layout_marginTop="15dp"
+        android:background="@color/black" >
+
+        <TextView
+            android:id="@+id/pending_crew_requests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:text="@string/mainscreen_crew_mystream_textview3"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/pending_crew_requestcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/imageView2"
+            android:text="2" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/smallforwardarrow" />
+    </RelativeLayout>
+
+    <TableRow
+        android:id="@+id/tablerow1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pending_crew_request_relativelayout"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="10dp"
+        android:gravity="left|center"
+        android:orientation="horizontal"
+        android:weightSum="9" >
+
+        <TextView
+            android:id="@+id/mainscreen_crewmystreamfriendscount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="10"
+            android:textColor="@color/brain_word_color" />
+
+        <TextView
+            android:id="@+id/mainscreen_crewmystreamcrewscount"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="10"
+            android:textColor="@color/brain_word_color" />
+
+        <TextView
+            android:id="@+id/mainscreen_crewmystreamrequestscount"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="10"
+            android:textColor="@color/brain_word_color" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tablerow2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tablerow1"
+        android:layout_marginBottom="1dp"
+        android:gravity="left|center"
+        android:orientation="horizontal"
+        android:weightSum="9" >
+
+        <TextView
+            android:id="@+id/mainscreen_crew_mystream_friends"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="FRIENDS"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/mainscreen_crew_mystream_crews"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="CREWS"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/mainscreen_crew_mystream_requests"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="REQUESTS"
+            android:textColor="@android:color/white" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tablerow2"
+        android:layout_margin="5dp"
+        android:background="@color/white" />
+
+    <ListView
+        android:id="@+id/my_crew_stream_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line" >
+    </ListView>
+
+</RelativeLayout>

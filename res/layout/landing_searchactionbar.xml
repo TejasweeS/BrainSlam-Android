@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/brain_word_color"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <EditText
+        android:id="@+id/searchbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:focusableInTouchMode="true"
+        android:background="@android:color/white"
+        android:drawableLeft="@drawable/searchicon"
+        android:hint="  Search friends &amp; categories..."
+        android:imeOptions="actionSearch" />
+
+</LinearLayout>

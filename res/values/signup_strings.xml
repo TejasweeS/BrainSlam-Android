@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="confirmpwd_hint">Confirm</string>
+
+</resources>

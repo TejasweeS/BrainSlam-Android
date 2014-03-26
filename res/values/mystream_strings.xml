@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="mystream_topbar_item1">Stream</string>
+    <string name="mystream_topbar_item2">Category</string>
+    <string name="mystream_topbar_item3">Crew</string>
+    <string name="mystream_topbar_item4">Account</string>
+    <string name="editmystream_title">Edit My Stream</string>
+    <string name="editmystream_text">Edit your home stream by removing or reordering your list.</string>
+    <string name="editmystream_txt">My Stream</string>
+    <string name="editmystream_addnew_stream">Add More To Stream</string>
+
+</resources>

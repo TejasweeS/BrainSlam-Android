@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="35dp"
+        android:layout_height="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/grayuparrow"
+        android:onClick="BackIconClick"
+         />
+
+<LinearLayout
+    android:id="@+id/brainslam_textlayout"
+    android:layout_width="fill_parent"
+    android:layout_toLeftOf="@id/imageView1"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:gravity="center" >
+
+                 <TextView
+                     android:id="@+id/first_bracket"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:gravity="center"
+                     android:text="@string/start_bracket"
+                     android:textColor="@android:color/white"
+                     android:textSize="@dimen/activity_login_screen_textSize"
+                     android:textStyle="bold" />
+
+                 <TextView
+                     android:id="@+id/brain_text"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:text="@string/brain"
+                     android:textColor="@color/brain_word_color"
+                     android:textSize="@dimen/activity_login_screen_textSize"
+                     android:textStyle="bold" />
+
+                 <TextView
+                     android:id="@+id/hyphen"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="@string/hyphen"
+                     android:textColor="@android:color/white"
+                     android:textSize="@dimen/activity_login_screen_textSize"
+                     android:textStyle="bold" />
+
+                 <TextView
+                     android:id="@+id/slam"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="@string/slam"
+                     android:textColor="@color/slam_word_color"
+                     android:textSize="@dimen/activity_login_screen_textSize"
+                     android:textStyle="bold" />
+
+                 <TextView
+                     android:id="@+id/close_bracket"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="@string/close_bracket"
+                     android:textColor="@android:color/white"
+                     android:textSize="@dimen/activity_login_screen_textSize"
+                     android:textStyle="bold" />
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:id="@+id/activity_landing_bottombar"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="45dp"
+                 android:background="@color/blue_kaltura"
+                 android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView_messages"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="bottomtabclk"
+            android:padding="10dp"
+            android:text="Messages"
+            android:textColor="@color/blue_kaltura" />
+
+        <TextView
+            android:id="@+id/textView_notifications"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@color/blue_kaltura"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="bottomtabclk"
+            android:padding="10dp"
+            android:text="Notifications"
+            android:textColor="@color/white" />
+
+      
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/lvExp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="85dp" >
+
+       <!--  android:groupIndicator="@drawable/expandable_list_selector" > -->
+        
+    </ExpandableListView>
+    
+    
+    
+    
+</RelativeLayout>

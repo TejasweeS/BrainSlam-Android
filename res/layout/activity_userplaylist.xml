@@ -1,0 +1,312 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/activity_playlist__action_bar" />
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avg IQ Score:" />
+
+        <TextView
+            android:id="@+id/userplaylist_IQScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/signup_btnclicked"
+            android:padding="3dp"
+            android:text="00" />
+    </TableRow>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/llhide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+                
+                <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@color/blue_kaltura"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <TextView
+                    android:id="@+id/tvaddfriend"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/addfriend"
+                    android:gravity="center"
+                    android:onClick="tabclk"
+                    android:padding="10dp"
+                    android:text="Add Friend"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvsendmsg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/msg"
+                    android:gravity="center"
+                    android:onClick="tabclk"
+                    android:padding="10dp"
+                    android:text="Send Message"
+                    android:textColor="@color/blue_kaltura" />
+
+                <TextView
+                    android:id="@+id/tvfollow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/addicon"
+                    android:gravity="center"
+                    android:onClick="tabclk"
+                    android:padding="10dp"
+                    android:text="Follow"
+                    android:textColor="@color/blue_kaltura" />
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/user1" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="Small Text"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                </LinearLayout>
+            
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/brain_word_color" >
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="3" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/userplalist_countcrew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="00"
+                        android:textColor="@color/brain_word_color"
+                        android:textSize="@dimen/activity_login_screen_buttontextsize" />
+
+                    <TextView
+                        android:id="@+id/userplalist_crew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/crew" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/userplalist_countfriends"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="00"
+                        android:textColor="@color/brain_word_color"
+                        android:textSize="@dimen/activity_login_screen_buttontextsize" />
+
+                    <TextView
+                        android:id="@+id/userplalist_friends"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/friends" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/userplalist_countfollowers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="00"
+                        android:textColor="@color/brain_word_color"
+                        android:textSize="@dimen/activity_login_screen_buttontextsize" />
+
+                    <TextView
+                        android:id="@+id/userplalist_following"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/following" />
+                </LinearLayout>
+            </LinearLayout>
+
+             <com.android.brainslam.horizonatlscrollview.HorizontalListView
+                    android:id="@+id/featured_videos_list_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    android:background="#ddd" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@color/blue_kaltura"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:id="@+id/tv1"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                     android:clickable="true"
+                    android:layout_weight="1"
+                     android:onClick="tabclk"
+                    android:background="@color/blue_kaltura"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/newtext"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                     android:clickable="true"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:onClick="tabclk"
+                    android:padding="10dp"
+                    android:text="@string/highestrated"
+                    android:textColor="@color/blue_kaltura" />
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:gravity="center"
+                     android:clickable="true"
+                    android:onClick="tabclk"
+                    android:padding="10dp"
+                    android:text="@string/mostviews"
+                    android:textColor="@color/blue_kaltura" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/brain_word_color"
+                android:orientation="vertical" >
+                
+                <EditText
+                    android:id="@+id/et_search"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/search_bar_bg"
+                    android:drawableLeft="@android:drawable/ic_menu_search"
+                    android:hint="Search Playlists..."
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true" />
+                
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" >
+            </ListView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

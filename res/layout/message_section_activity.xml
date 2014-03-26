@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/brainslam_textlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="7" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/logo_text" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:onClick="BackIconClick"
+            android:src="@drawable/grayuparrow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_landing_bottombar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_kaltura"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/activity_landing_bottombar_category"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="bottomtabclk"
+            android:padding="10dp"
+            android:text="Messages"
+            android:textColor="@color/blue_kaltura" />
+
+        <TextView
+            android:id="@+id/activity_landing_bottombar_all"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@color/blue_kaltura"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="bottomtabclk"
+            android:padding="10dp"
+            android:text="Notifications"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/lvExp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- android:groupIndicator="@drawable/expandable_list_selector" > -->
+
+    </ExpandableListView>
+
+</LinearLayout>

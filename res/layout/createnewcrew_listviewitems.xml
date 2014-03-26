@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:weightSum="10"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/createnewlistview_crewicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/createnewlistview_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:gravity="center|left"
+        android:text="Crew Name"
+        android:textColor="@color/brain_word_color"/>
+
+    <ImageView
+        android:id="@+id/deleteCrew_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+         android:onClick="CrewSelectedDeletion"
+        android:padding="15dp"
+        android:src="@drawable/smallclosebutton"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/selectionBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:checked="false"
+        android:button="@drawable/landing_checkbox_selector"
+        android:onClick="CrewSelectedAddition"
+        android:paddingRight="@dimen/activity_landing_chekbox_padding_right" />
+
+</LinearLayout>

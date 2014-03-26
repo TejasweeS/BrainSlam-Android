@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
+    tools:context=".ScreenCapturedEdit" >
+
+    <VideoView
+        android:id="@+id/videoView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/duration_layout"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:id="@+id/image_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/duration_layout"
+        android:layout_alignParentTop="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/duration_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/video_seek_bar"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:weightSum="6" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/screen_capture_edit_duration_start_text"
+            android:textSize="@dimen/screen_screen_capture_edit_duration_textsize" />
+
+        <TextView
+            android:id="@+id/start_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="00"
+            android:textSize="@dimen/screen_screen_capture_edit_duration_textsize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/screen_capture_edit_duration_end_text"
+            android:textSize="@dimen/screen_screen_capture_edit_duration_textsize" />
+
+        <TextView
+            android:id="@+id/end_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="00"
+            android:textSize="@dimen/screen_screen_capture_edit_duration_textsize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/screen_capture_edit_duration_length_text"
+            android:textSize="@dimen/screen_screen_capture_edit_duration_textsize" />
+
+        <TextView
+            android:id="@+id/length_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="00"
+            android:textSize="@dimen/screen_screen_capture_edit_duration_textsize" />
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/video_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/frames" />
+
+    <HorizontalScrollView
+        android:id="@+id/frames"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_layout" >
+
+        <LinearLayout
+            android:id="@+id/frames_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/duration_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/orange_kaltura"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/selected_cover_photo"
+        android:layout_width="@dimen/screen_capture_edit_coverphoto_size"
+        android:layout_height="@dimen/screen_capture_edit_coverphoto_size"
+        android:layout_above="@+id/duration_layout"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitCenter" 
+        android:layout_marginRight="@dimen/screen_capture_edit_coverphoto_margin_right"
+        android:background="@drawable/border"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/select_cover_photo_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/screen_capture_edit_coverphoto_margin_right"
+            android:background="@drawable/blue_circle"
+            android:gravity="center"
+            android:textSize="@dimen/activity_capture_edit_buttontextsize"
+            android:text="@string/screen_capture_edit_duration_select_cover_photo"
+            android:textColor="@color/blue_kaltura" />
+
+        <ImageButton
+            android:id="@+id/play_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/screen_capture_edit_coverphoto_margin_right"
+            android:background="@drawable/blue_circle"
+            android:onClick="onClickPlayRecordedVideo"
+            android:src="@drawable/playbutton"
+            android:textColor="@color/orange_kaltura" />
+
+        <TextView
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/screen_capture_edit_coverphoto_margin_right"
+            android:background="@drawable/blue_circle"
+            android:gravity="center"
+            android:onClick="onClick"
+                android:textSize="@dimen/activity_capture_edit_buttontextsize"
+            android:text="@string/next_text"
+            android:textColor="@color/orange_kaltura" />
+    </LinearLayout>
+
+</RelativeLayout>

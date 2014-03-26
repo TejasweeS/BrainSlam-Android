@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="mainscreen_crew_mystream_textview1">My Crew Stream</string>
+    <string name="mainscreen_crew_mystream_button1">Add New Crew</string>
+    <string name="mainscreen_crew_mystream_button2">Friend Request</string>
+    <string name="mainscreen_crew_mystream_textview2">Pending friend Requests</string>
+    <string name="mainscreen_crew_mystream_textview3">Pending crew Requests</string>
+</resources>

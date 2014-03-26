@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PlaylistActivity" >
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="5"
+    android:background="@color/white"
+     >
+
+    <ImageView
+        android:id="@+id/downmenu"
+        android:layout_width="20dp"
+        android:layout_height="35dp"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:onClick="backclick"
+        android:padding="5dp"
+        android:src="@drawable/arrow" />
+
+    <TextView
+        android:id="@+id/playlistusernm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:gravity="center_horizontal"
+        android:padding="12dp"
+        android:text="Username"
+        android:textSize="@dimen/activity_playlist_actionbar_playlistSize" />
+
+    <ImageView
+        android:id="@+id/userphoto"
+        android:layout_width="55dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:src="@drawable/addicon" />
+     
+</LinearLayout>
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/brain_word_color"
+        >
+        
+
+       <EditText
+           android:id="@+id/searchbar"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Search Playlists"
+           android:background="@android:color/white"
+           android:imeOptions="actionSearch" 
+           android:drawableLeft="@android:drawable/ic_menu_search"/>
+        
+    </LinearLayout>
+
+   <ListView
+       android:id="@+id/playlist"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" >
+   </ListView>
+
+</LinearLayout>

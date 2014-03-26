@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/bluetopbar" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                 >
+
+                <ToggleButton
+                    android:id="@+id/pushnotification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true" />
+
+                <TextView
+                    android:id="@+id/pushnotificationTilte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pushnotification_title"
+                    android:textSize="@dimen/myupload_item_title_textsize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pushnotificationTilte"
+                    android:paddingTop="5dp"
+                    android:text="@string/myaccount_text1"
+                    android:textSize="@dimen/myupload_item_view_textsize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/myaccount_myprofile"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:background="@color/strip"
+                android:padding="10dp"
+                 >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/myaccount_text2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/myupload_item_title_textsize" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@android:drawable/ic_dialog_info" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/myaccount_editUploads"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:background="@color/strip"
+                android:padding="10dp"
+                 >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/myaccount_text3"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/myupload_item_title_textsize" />
+
+                <ImageView
+                    android:id="@+id/myaccount_uploads_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@android:drawable/ic_dialog_info" />
+
+                <TextView
+                    android:id="@+id/myaccount_uploads_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/myaccount_uploads_icon"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="13"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/strip"
+                android:padding="10dp"
+                 >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/myaccount_group"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/myupload_item_title_textsize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/signup_btnclicked"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/myaccount_createlist"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/myaccount_friends"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:padding="10dp"
+                 >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/myaccount_friends"
+                    android:textColor="@color/strip"
+                    android:textSize="@dimen/myupload_item_title_textsize" />
+
+                <ImageView
+                    android:id="@+id/myaccount_friends_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/forwardarrow" />
+
+                <TextView
+                    android:id="@+id/myaccount_friends_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/myaccount_friends_icon"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:text="13"
+                    android:textColor="@color/strip" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/strip" />
+
+            <RelativeLayout
+                android:id="@+id/myaccount_followers"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                 >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/myaccount_text3"
+                    android:textColor="@color/strip"
+                    android:textSize="@dimen/myupload_item_title_textsize" />
+
+                <ImageView
+                    android:id="@+id/myaccount_followers_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/forwardarrow" />
+
+                <TextView
+                    android:id="@+id/myaccount_followers_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/myaccount_followers_icon"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:text="13"
+                    android:textColor="@color/strip" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/strip"
+                android:padding="10dp"
+                android:text="@string/myaccount_message"
+                android:textColor="@color/white"
+                android:textSize="@dimen/myupload_item_title_textsize" />
+
+            <RelativeLayout
+                android:id="@+id/myaccount_groupmessage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/myaccount_message_group"
+                    android:textColor="@color/strip"
+                    android:textSize="@dimen/myupload_item_title_textsize" />
+
+                <ImageView
+                    android:id="@+id/myaccount_groupmessage_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/forwardarrow" />
+
+                <TextView
+                    android:id="@+id/myaccount_groupmessage_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/myaccount_groupmessage_icon"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="13 New Messages"
+                    android:textColor="@color/strip" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/strip" />
+
+            <RelativeLayout
+                android:id="@+id/myaccount_privatemessage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/myaccount_message_private"
+                    android:textColor="@color/strip"
+                    android:textSize="@dimen/myupload_item_title_textsize" />
+
+                <ImageView
+                    android:id="@+id/myaccount_privatemessage_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/forwardarrow" />
+
+                <TextView
+                    android:id="@+id/myaccount_privatemessage_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/myaccount_privatemessage_icon"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="13 New Messages"
+                    android:textColor="@color/strip" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/strip"
+                android:padding="10dp"
+                android:text="@string/myaccount_connectedaccount"
+                android:textColor="@color/white"
+                android:textSize="@dimen/myupload_item_title_textsize" />
+
+            <RelativeLayout
+                android:id="@+id/myaccount_facebook"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" >
+
+                <CheckBox
+                    android:id="@+id/facebook_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:checked="true" />
+
+                <TextView
+                    android:id="@+id/myaccount_facebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/myaccount_connectedaccount1"
+                    android:textSize="@dimen/myupload_item_title_textsize" />
+
+                <TextView
+                    android:id="@+id/myaccount_facebook_isconnected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/myaccount_facebook"
+                    android:paddingTop="5dp"
+                    android:text="@string/myaccount_connectedaccount_isconnected"
+                    android:textSize="@dimen/myupload_item_view_textsize" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/strip" />
+
+            <RelativeLayout
+                android:id="@+id/myaccount_googleplus"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" >
+
+                <CheckBox
+                    android:id="@+id/googleplus_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true" />
+
+                <TextView
+                    android:id="@+id/myaccount_googleplus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/myaccount_connectedaccount2"
+                    android:textSize="@dimen/myupload_item_title_textsize" />
+
+                <TextView
+                    android:id="@+id/myaccount_googleplus_isconnected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/myaccount_googleplus"
+                    android:paddingTop="5dp"
+                    android:text="@string/myaccount_connectedaccount_isnotconnected"
+                    android:textSize="@dimen/myupload_item_view_textsize" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/strip" />
+
+            <RelativeLayout
+                android:id="@+id/myaccount_twitter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" >
+
+                <CheckBox
+                    android:id="@+id/twitter_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true" />
+
+                <TextView
+                    android:id="@+id/myaccount_twitter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/myaccount_connectedaccount3"
+                    android:textSize="@dimen/myupload_item_title_textsize" />
+
+                <TextView
+                    android:id="@+id/myaccount_twitter_isconnected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/myaccount_twitter"
+                    android:paddingTop="5dp"
+                    android:text="@string/myaccount_connectedaccount_isnotconnected"
+                    android:textSize="@dimen/myupload_item_view_textsize" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

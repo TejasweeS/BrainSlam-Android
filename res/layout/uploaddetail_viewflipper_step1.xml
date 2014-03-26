@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/slam_word_color" >
+
+        <TextView
+            android:id="@+id/Step1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="15dp"
+            android:textSize="@dimen/activity_upload_details_titlesize"
+            android:text="@string/uplaod_details_step1_textview1"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/Step1"
+            android:background="@android:color/white"
+            android:gravity="center" />
+    </RelativeLayout>
+  <ScrollView 
+      android:id="@+id/scrollView" 
+    android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+    >
+      
+      <LinearLayout 
+          android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          android:orientation="vertical"
+          >
+          
+            
+
+    <TextView
+        android:id="@+id/tell_about_your"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/uplaod_details_step1_textview2"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/activity_upload_details_titlesize" />
+    <!--
+    <TextView
+        android:id="@+id/upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/uplaod_details_step1_textview3"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/activity_upload_details_titlesize" />
+    -->
+
+    <EditText
+        android:id="@+id/video_upload_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:background="@android:color/white"
+        android:gravity="left|top"
+        android:singleLine="true"
+        android:hint="Post Title..."
+        android:imeOptions="actionNext" />
+
+    <EditText
+        android:id="@+id/video_upload_description"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:background="@android:color/white"
+        android:gravity="left|top"
+        android:hint="Post Description..."
+        android:imeOptions="actionNext"
+        android:inputType="textMultiLine" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        layout="@layout/uploaddeatils_searchactionbar" />
+
+    <GridView
+        android:id="@+id/VideoTags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2" >
+    </GridView>
+          
+          
+      </LinearLayout>
+      
+  </ScrollView>
+  
+</LinearLayout>

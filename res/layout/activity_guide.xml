@@ -1,0 +1,252 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/strip"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <LinearLayout
+         android:id="@+id/linearLayout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/black"
+        android:padding="5dp"
+        android:orientation="vertical" >
+       <ImageView 
+                 android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_text"
+                android:layout_gravity="center_horizontal"     
+                android:layout_marginTop="5dp"     
+                />
+        <!-- <LinearLayout
+            android:id="@+id/brainslam_textlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/first_bracket"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/start_bracket"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/activity_login_screen_textSize" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/brain_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/brain"
+                android:textColor="@color/brain_word_color"
+                android:textSize="@dimen/activity_login_screen_textSize" />
+
+            <TextView
+                android:id="@+id/hyphen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hyphen"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/activity_login_screen_textSize" />
+
+            <TextView
+                android:id="@+id/slam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/slam"
+                android:textColor="@color/slam_word_color"
+                android:textSize="@dimen/activity_login_screen_textSize" />
+
+            <TextView
+                android:id="@+id/close_bracket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/close_bracket"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/activity_login_screen_textSize" />
+        </LinearLayout> -->
+
+        <TextView
+            android:id="@+id/use_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textSize="20sp"
+            android:text="@string/activity_guide_textviewguide"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/guide_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="52dp"
+        android:layout_below="@+id/linearLayout_top"
+      
+        android:layout_weight="8"
+        android:background="@color/blue_kaltura"
+        android:clickable="true"
+        android:focusable="true" >
+
+        <ViewFlipper
+            android:id="@+id/viewFlipper1"
+            android:layout_width="match_parent"
+             android:clickable="false"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:focusable="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:gravity="center" >
+
+                <ImageView 
+                     android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:src="@drawable/logoicon"/>
+                
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="Slide one"
+                    android:textColor="@android:color/white"
+                    android:textSize="50dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:focusable="false"
+                android:gravity="center" >
+
+                 <ImageView 
+                     android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:src="@drawable/logoicon"/>
+                 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="Slide Four"
+                    android:textColor="@android:color/white"
+                    android:textSize="50dp" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center" 
+                android:focusable="false" >
+
+                 <ImageView 
+                     android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:src="@drawable/logoicon"/>
+                 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="Slide three"
+                    android:textColor="@android:color/white"
+                    android:textSize="50dp" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center" 
+                android:focusable="false" >
+
+                 <ImageView 
+                     android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:src="@drawable/logoicon"/>
+                 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="Slide Two"
+                    android:textColor="@android:color/white"
+                    android:textSize="50dp" >
+                </TextView>
+            </LinearLayout>
+        </ViewFlipper>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:focusable="false"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/guides_circle1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/gray_circle"
+                android:focusable="false" />
+
+            <ImageView
+                android:id="@+id/guides_circle2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/white_circle"
+                android:focusable="false" />
+
+            <ImageView
+                android:id="@+id/guides_circle3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/white_circle"
+                android:focusable="false" />
+
+            <ImageView
+                android:id="@+id/guides_circle4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/white_circle"
+                android:focusable="false" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/start_brainslam"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue_kaltura"
+        android:text="Start Brain-Slamming"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sendmessage_screen_textview1">Message</string>
+    <string name="sendmessage_screen_textview2">To:</string>
+    <string name="sendmessage_screen_textview3">Subject:</string>
+</resources>

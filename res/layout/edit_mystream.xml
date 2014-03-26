@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/top_linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/brain_word_color"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/editmystream_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/editmystream_title_textsize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/editmystream_text"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/editmystream_txt"
+            android:textColor="@color/slam_word_color"
+            android:textSize="@dimen/editmystream_title_textsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="10" >
+
+        <com.android.brainslam.DnDList.DragNDropListView
+            android:id="@id/android:list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"/>
+
+        <!--<ListView
+            android:id="@+id/streamList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5" />
+
+        --><TextView
+            android:id="@+id/addnew_stream"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="9"
+            android:background="@color/slam_word_color"
+            android:gravity="center"
+            android:text="@string/editmystream_addnew_stream"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/editmystream_title_textsize" />
+    </LinearLayout>
+
+</LinearLayout>

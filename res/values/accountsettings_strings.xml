@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="myaccount">My Account</string>
+	<string name="edit">Edit</string>
+	<string name="hintemail">email</string>
+	<string name="hintpass">password</string>
+	<string name="hintconfirm">confirm</string>
+	<string name="description">About Me</string>
+	<string name="pushNotifications">Push Notifications</string>
+	<string name="editnotifications">Edit Notifications</string>
+	<string name="mycrew">My Crew</string>
+	<string name="editcrew">Edit Crew List</string>
+	<string name="editfriend">Edit Friends List</string>
+	<string name="socialconnects">Social Connects</string>
+	<string name="facebook">Facebook</string>
+	<string name="twitter">Twitter</string>
+	<string name="google">Google +</string>
+	<string name="deleteacc">Delete Account</string>
+	
+    
+</resources>

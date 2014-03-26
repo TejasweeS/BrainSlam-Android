@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sharing_popup_textview1">Facebook</string>
+    <string name="sharing_popup_textview2">Google Plus</string>
+    <string name="sharing_popup_textview3">Twitter</string>
+    <string name="sharing_popup_textview4">SMS</string>
+    <string name="sharing_popup_textview5">Email</string>
+    <string name="sharing_popup_textview6">Done</string>
+</resources>

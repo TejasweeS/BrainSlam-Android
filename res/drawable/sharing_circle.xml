@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval" 
+    android:innerRadius="5dp">
+    <stroke 
+        android:color="@color/slam_word_color" android:width="3dp"/>
+    <gradient android:startColor="@color/black" android:endColor="@color/black"
+        />
+</shape>

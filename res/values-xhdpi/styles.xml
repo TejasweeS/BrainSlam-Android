@@ -1,0 +1,12 @@
+<resources>
+    <style name="brainslamRatingBar" parent="@android:style/Widget.RatingBar">
+       <item name="android:progressDrawable">@drawable/brainslam_ratingbar_full</item>
+          <item name="android:minHeight">11dip</item>
+        <item name="android:maxHeight">11dip</item>
+   </style>
+   
+<style name="alert" parent="android:Theme.Dialog">
+        <item name="android:textSize">15sp</item>
+ </style>
+
+</resources>

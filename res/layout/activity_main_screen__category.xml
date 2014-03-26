@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/categoryrelative" >
+
+    <TextView
+        android:id="@+id/mainscreen_category_categorytitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/brain_word_color"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/activity_main_screen__category_title"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/editmystream_title_textsize"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/slam_word_color"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/mainscreen_category_searchbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:drawableLeft="@drawable/searchicon"
+            android:hint=" Search Categories"
+            android:imeOptions="actionSearch"
+            android:singleLine="true" 
+            android:padding="2dp"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/mainscreen_category_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:persistentDrawingCache="all"
+        android:splitMotionEvents="false" >
+    </ListView>
+
+</LinearLayout>

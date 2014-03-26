@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:gravity="center"
+   >
+
+    <ImageView
+        android:id="@+id/iv_stream_handler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/mystream" />
+
+    <TextView
+        android:id="@+id/stream_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_stream_handler"
+        android:layout_toLeftOf="@+id/stream_close"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:text="Title" />
+
+    <!--<TextView
+        android:id="@+id/stream_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_toLeftOf="@+id/stream_close"
+        android:layout_alignLeft="@id/stream_name"
+        android:layout_below="@id/stream_name"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+         android:textSize="15sp"
+        android:text="Subtitle" />
+
+    --><ImageView
+        android:id="@+id/stream_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/whiteclosebutton"
+        android:layout_marginRight="10dp"
+        android:onClick="removeStreamClick"
+        android:padding="5dp" />
+
+</RelativeLayout>

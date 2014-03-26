@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateTwitterStatusActivity"
+    android:background="#00BFFF" >
+
+    <EditText
+        android:id="@+id/txtupdatetwitterstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:hint="Enter Status"
+        android:padding="20dp"
+        android:layout_margin="10dp">
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnupdatetwitterstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtupdatetwitterstatus"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:layout_marginTop="52dp"
+        android:text="Tweet"
+        android:textColor="@color/slam_word_color"
+        android:layout_margin="10dp" />
+    
+    <Button
+        android:id="@+id/btnlogouttwitterstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnupdatetwitterstatus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:padding="20dp"
+        android:text="LogOut" 
+        android:textColor="@color/slam_word_color"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/btnBacktwitterstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnlogouttwitterstatus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:text="Back"
+        android:padding="20dp" 
+        android:textColor="@color/slam_word_color"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>

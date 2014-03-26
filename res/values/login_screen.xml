@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="Brain_slam_logo">Brain-slam-logo</string>
+    <string name="brain_slam_title">(BRAIN-SLAM)</string>
+    <string name="facebook_sign_in">Sign In With Facebook</string>
+    <string name="email_sign_up">SignUp With Email</string>
+    <string name="facebook_login">Sign In With Facebook</string>
+    <string name="start_bracket">(</string>
+    <string name="close_bracket">)</string>
+    <string name="brain">BRAIN</string>
+    <string name="hyphen">-</string>
+    <string name="slam">SLAM</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <color name="slam_word_color">#F6B245</color>
+    <color name="brain_word_color">#43A8E1</color> 
+    <color name="tabcolor">#FF7F00</color>
+</resources>

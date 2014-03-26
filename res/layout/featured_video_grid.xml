@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp" >
+
+        <ProgressBar
+            android:id="@+id/spinner"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:clickable="false"
+            android:focusable="false" />
+
+        <ImageView
+            android:id="@+id/video_username_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/video_IQ_score"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/video_IQ_score"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="5dp"
+            android:src="@drawable/username" />
+
+        <TextView
+            android:id="@+id/video_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/video_username_icon"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@id/video_username_icon"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/video_username_icon"
+            android:gravity="left|center"
+            android:singleLine="true"
+            android:text="Username medium1"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/video_username_icon"
+            android:layout_alignParentRight="true"
+            android:layout_margin="1dp"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="5dp"
+            android:weightSum="3" >
+
+            <TextView
+                android:id="@+id/video_name"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:singleLine="true"
+                android:text="Video Title Go here"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="2"
+                android:gravity="right"
+                android:paddingLeft="5dp" >
+
+                <RatingBar
+                    android:id="@+id/video_rating_bar"
+                    style="@style/brainslamRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:numStars="5"
+                    android:rating="2"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/video_IQ_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/video_IQ_score_value"
+            android:layout_alignTop="@+id/video_IQ_score_value"
+            android:layout_toLeftOf="@+id/video_IQ_score_value"
+            android:gravity="center"
+            android:src="@drawable/ic_launcher"
+            android:text="IQ Score: "
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:textStyle="italic"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/video_IQ_score_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/signup_btnclicked"
+            android:padding="3dp"
+            android:text="46"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</LinearLayout>

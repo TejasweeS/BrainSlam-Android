@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp" >
+
+        <ImageView
+            android:id="@+id/mainscreen_crew_user_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/rounded_corner_image"
+            android:src="@drawable/username" />
+
+        <TextView
+            android:id="@+id/mainscreen_screw_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/mainscreen_crew_user_icon"
+            android:text="username"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/mainscreen_crew_iqscorecount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/mainscreen_screw_username"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/iq_score"
+            android:text="46" />
+
+        <TextView
+            android:id="@+id/mainscreen_crew_iqscorelbael"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@+id/mainscreen_crew_iqscorecount"
+            android:text="IQ Score:"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+        
+
+        <ImageView
+            android:id="@+id/mainscreen_crew_friendrequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/bluecrewusericon" />
+
+        <ImageView
+            android:id="@+id/mainscreen_crew_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/msg" />
+
+        <ImageView
+            android:id="@+id/mainscreen_crew_mystream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/playlist" />
+
+        <ImageView
+            android:id="@+id/mainscreen_crew_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/landing_checkbox_selector" />
+    </LinearLayout>
+
+</LinearLayout>

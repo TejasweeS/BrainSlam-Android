@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ViewFlipper
+        android:id="@+id/viewFlipper1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/uploaddetails_bottombar" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/uploaddetail_viewflipper_step1" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/uploaddetails_viewflipper_step3" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/uploaddetails_viewflipper_step2" />
+    </ViewFlipper>
+
+    <LinearLayout
+        android:id="@+id/uploaddetails_bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/brain_word_color"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/uploaddetails_circle1"
+                android:layout_width="@dimen/slam_circle_image_width_height"
+                android:layout_height="@dimen/slam_circle_image_width_height"
+                android:background="@drawable/slam_circle" />
+
+            <ImageView
+                android:id="@+id/uploaddetails_circle2"
+             android:layout_width="@dimen/slam_circle_image_width_height"
+                android:layout_height="@dimen/slam_circle_image_width_height"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/white_circle" />
+
+            <ImageView
+                android:id="@+id/uploaddetails_circle3"
+               android:layout_width="@dimen/slam_circle_image_width_height"
+                android:layout_height="@dimen/slam_circle_image_width_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/white_circle" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/uploaddetails_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="@dimen/upload_next_button_padding"
+            android:onClick="onClick"
+            android:text="@string/uplaod_details_next"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/activity_upload_details_titlesize" />
+    </LinearLayout>
+
+</RelativeLayout>

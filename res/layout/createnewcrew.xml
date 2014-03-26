@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/brain_word_color"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:weightSum="4" >
+
+        <ImageView
+            android:id="@+id/createnewcrew_Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="7dp"
+            android:onClick="onClick"
+            android:src="@drawable/whiteclosebutton"
+             />
+
+        <EditText
+            android:id="@+id/createnewcrew_Search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:background="@drawable/searchbar_rounded_corners"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:hint="  Search Crew"
+            android:onClick="CrewSelectedDeletion" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/createnewcrew_New"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="New"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <!-- Use For Pull To Refresh Remove below while running pull to refresh -->
+    <!--
+       <com.android.utils.PullToRefreshListView
+        android:id="@+id/createnewcrew_ListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    -->
+
+    <ListView
+        android:id="@+id/createnewcrew_ListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
